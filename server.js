@@ -27,16 +27,16 @@ app.set('views', path.join(__dirname, 'src', 'views'));
 
 async function startServer() {
     try {
-        const isAvailable = await isPortAvailable(process.env.PORT || default_port);
+        const isAvailable = await isPortAvailable(process.env.LOCALHOST_PORT || default_port);
 
         if (!isAvailable) {
-            throw new Error(`Port ${process.env.PORT} is not available`);
+            throw new Error(`Port ${process.env.LOCALHOST_PORT} is not available`);
         }
         
         app.use(router);
 
-        app.listen(process.env.PORT || default_port, function () {
-            console.log(`Server started on port ${process.env.PORT}`);
+        app.listen(process.env.LOCALHOST_PORT || default_port, function () {
+            console.log(`Server started on port ${process.env.LOCALHOST_PORT}`);
         });
 
     } catch (error) {
