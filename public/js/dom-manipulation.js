@@ -11,9 +11,7 @@ class domManipulation {
     };
 
     start() {
-        this.animationBurguerBtn();
-        this.updatePopupVisibility();
-        this,this.closePopup();
+        this.animationBurguerBtn(); 
     };
 
     animationBurguerBtn() {
@@ -27,30 +25,11 @@ class domManipulation {
             };
         });
     };
-
-    showPopup() {
-        if (!this.isVisiblePopup) {
-            this.popupContainer.style.display = "none";
-        } else {
-            this.popupContainer.style.display = "flex";
-        };
-    };
-
     acceptCookies(accept){
         if(accept){
             this.closePopup();
             cookieService.CreateAndSetWebCookie('g50');
         };
-    };
-    updatePopupVisibility(isVisible) {
-        this.isVisiblePopup = isVisible;
-        this.showPopup();
-    };
-
-    closePopup() {
-        this.closePopupbtn.addEventListener('click', () => {
-            this.updatePopupVisibility(false);
-        });
     };
 };
 
