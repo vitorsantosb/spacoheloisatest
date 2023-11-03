@@ -1,0 +1,130 @@
+#home-container {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 8rem;
+    overflow-x: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#latest-news-container {
+    padding: 3rem 1rem;
+    overflow-x: hidden;
+}
+
+.cards {
+    padding-top: 3rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    overflow-x: hidden;
+}
+
+.cards article {
+    border-bottom: 0.1rem solid #88888854;
+    padding-bottom: 1.5rem;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.cards article h3, p{
+    padding: 1rem 0;
+}
+
+.cards article a {
+    color: #87bc9e;
+}
+
+.cards article figure img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+#info-container {
+    background-color: rgb(32, 32, 32);
+    padding-bottom: 10rem;
+}
+
+#info-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+}
+
+#info-content a{
+    color: #ffff;
+}
+
+#info-content div {
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.containerOne {
+    background-color: rgb(135, 188, 158);
+}
+
+.containerTwo {
+    background-color: rgb(115, 174, 141);
+    border-left:0.1rem solid rgba(102, 102, 102, 0.151);
+}
+
+.containerTree {
+    background-color: rgb(102, 161, 128);
+    border-left:0.1rem solid rgba(102, 102, 102, 0.151);
+}
+
+@media (max-width: 990px) {
+    #latest-news-container h2{
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards article {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 882px) {
+    #info-content {
+        flex-direction: column;
+    }
+
+    #info-content div {
+        width: 70%;
+    }
+}
+
+@media (max-width:958px) {
+    #home-container {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 467px) {
+    #home-container {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 350px) {
+    #home-container {
+        height: 40vh;
+    }
+}

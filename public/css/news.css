@@ -1,0 +1,33 @@
+#news-containers {
+    min-height: 80vh;
+    padding: 15rem 2rem 8rem 2rem;
+}
+
+#news-containers div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-top: 3rem;
+}
+
+#news-containers div article{
+    width: 300px;
+}
+
+#news-containers div article a {
+    color: #87bc9e;
+}
+
+#news-containers div article h1, p {
+    padding: 1rem 0;
+}
+
+#news-containers div article figure, #news-containers div article figure img{
+    width: 100%;
+}
+
+@media (max-width: 686px) {
+    #news-containers div {
+        justify-content: center;
+    };
+};

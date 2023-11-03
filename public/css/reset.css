@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem; 
+    font-family: inherit;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'FonteLogo';
+    font-weight: bold;
+}
+
+
+.align-content {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    height: 29px;
+    overflow: hidden;
+}
+
+.social-icons a {
+    position: relative;
+    bottom: 0;
+    width: 29px;
+    height: 29px;
+    transition: bottom 0.3s ease;
+}
+
+.social-icons a:hover {
+    bottom: 100%;
+}
+
+.center {
+    max-width: 980px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.news-one-container{
+    padding: 15rem 1rem 1rem 1rem;
+    min-height: 100vh;
+}
+
+.news-one-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #88888854;
+    padding-bottom: 1.5rem;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.video div {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video div iframe {
+    width: 100%;
+}

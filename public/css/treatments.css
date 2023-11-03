@@ -1,0 +1,53 @@
+#treatments-container {
+    min-height: 100vh;
+    padding: 15rem 1rem 3rem 1rem;
+    text-align: justify;
+}
+
+#treatments-container article {
+    padding-top: 3rem;
+}
+
+#treatments-container article h3 {
+    padding: 1rem 0;
+}
+
+#treatments-container article ul li{
+    padding: 0.5rem 0;
+}
+
+.treatments-box {
+    width: auto;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.treatments-box-summary-background {
+    background-color: #ebebeb;
+}
+
+.treatments-box-text {
+    border: 0.1rem solid rgba(128, 128, 128, 0.582);
+    padding: 1rem;
+}
+
+.treatments-box summary {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.treatments-box summary h4 {
+    font-size: 1.5rem;
+}
+
+.treatments-box-bold-text {
+    font-weight: bold;
+    color: #66a180;
+}
+
+.treatments-box-options {
+    border: solid 0.1rem;
+    display: flex;
+}

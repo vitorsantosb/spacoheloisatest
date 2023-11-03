@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <title>Espaço Heloisa Rocha - Estética e Saúde</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Entre em contato e agende uma consulta no Spaço Heloisa Rocha." />
+    <meta name="Keywords" content="Spaço, Heloisa Rocha, HR, Spaço HR, Spaco, Estética, Estética RJ, Saúde, Cirurgia, Plástica, Dermatologia, Medicina, Ortomolecular, Nutrição, Tratamento, Laser, Vibropressoterapia, carboxiterapia, endermologia vibratória, estimulação russa, manthus, velashape, accent, light sheer, harmony, Barra da Tijuca, Barra, Rio de Janeiro, RJ" />
+    <meta name="Audience" content="all" />
+    <meta name="revisit-after" content="5 days" />
+    <meta name="language" content="pt-br">
+    <meta name="robots" content="index, follow"> 
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/theTeam.css">
+    <link rel="stylesheet" href="/css/spaco.css">
+    <link rel="stylesheet" href="/css/clipping.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="/css/treatments.css">
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    {{{body}}}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/dom-manipulation.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <section style="position: relative">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.list').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.itemBox').show(300);
+                }
+                else {
+                    $('.itemBox').not('.' + value).hide(300);
+                    $('.itemBox').filter('.' + value).show(300);
+                };
+            });
+        });
+        AOS.init();
+    </script>
+    {{>footer}}
+    </section>
+
+</body>
+</html>

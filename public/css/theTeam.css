@@ -1,0 +1,160 @@
+.container-team {
+    position: relative;
+    padding-bottom: 15rem;
+    padding-top: 15rem;
+}
+
+.nav-bar-team {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #88888854;
+}
+
+.nav-bar-team-content {
+    display: flex;
+    align-items: center;
+    gap: normal 0.5rem;
+}
+
+.button-home {
+    background: none;
+    border: none;
+}
+
+#doctor-description-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: stretch;
+    border-bottom: 0.1rem solid #88888854;
+    gap: 4rem;
+    padding: 3rem 0;
+    overflow-x: hidden;
+}
+
+#doctor-description-container figure a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#doctor-description-container figure {
+    max-width: 480px;
+    height: auto;
+}
+
+#description ul{
+    font-weight:bolder;
+    font-size: 1.2rem;
+}
+
+#team-container {
+    min-height: 50vh;
+    padding-top: 3rem;
+}
+
+#team-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+#team-desktop span{
+    color: #666666;
+}
+
+#team-desktop h5 {
+    padding: 0.6rem 0;
+}
+
+#columnOne {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#columnTwo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#team-desktop figure {
+    max-width: 300px;
+    height: auto;
+}
+
+#team-desktop figure img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#carolina {
+    height: 520px;
+}
+
+#team-slide-container {
+    display: none;
+}
+
+.slide2 img {
+    display: block;
+    max-width: 300px;
+    min-height: 420px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.swiper-slide div {
+    text-align: center;
+    
+}
+
+@media (max-width: 800px) {
+    #doctor-description-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #doctor-description-container figure {
+        margin: 0 auto;
+    }
+
+    #description {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    #team-slide-container {
+        display: block;
+    }
+
+    #team-container {
+        min-height: auto;
+    }
+
+    #team-desktop {
+        display: none;
+    }
+
+    #team-container h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 472px) {
+    #doctor-description-container figure img{
+        max-width: 300px;
+    }
+}
