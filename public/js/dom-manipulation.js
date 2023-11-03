@@ -20,7 +20,8 @@ class domManipulation {
         document.addEventListener('click', (event) => {
             const element = event.target;
             if (element.classList.contains('menu-burguer') ||
-                element.classList.contains('menu-line')) {
+                element.classList.contains('menu-line') ||
+                !this.menuMobile.classList.contains('show')) {
                 this.buttonBurguer.classList.toggle('open');
                 this.menuMobile.classList.toggle('show');
             };
